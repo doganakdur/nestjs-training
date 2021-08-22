@@ -76,3 +76,7 @@ nest g service users
     3. @Injectable
 
 ### For these you need to also read about Typescript Decorators.
+
+## Rest Client Extension for VSCode Users
+
+### There is an extension called "REST Client" for VSCode. If you install it, run the code, then you can send requests through the src/users/request.http file. You just need to click "Send Request" buttons for each individual request section.
