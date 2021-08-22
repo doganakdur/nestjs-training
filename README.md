@@ -24,19 +24,55 @@ On the other hand, if you have some experience, and if you are Nodejs/Typescript
 
 **Let's code.**
 
-## Before Starting
+# Before Starting
 This repo is created after watching [Stephen Grider's Udemy Course](https://www.udemy.com/course/nestjs-the-complete-developers-guide/) to learn more about Nestjs by myself. He is stunning teacher, you should check his courses.
 
-### Nest CLI
-We will use nest cli(command line interface) tool to create project and some of the files. To install nest cli;
+## Nest CLI
+### We will use nest cli(command line interface) tool to create project and some of the files. To install nest cli;
+---
 
 ```
 npm install -g @nestjs/cli
 ```
 
-Then to create an project;
+### Then to create an project;
 ```
 nest new your_project_name
 ```
 
-CLI will ask you "which package manager do you want to use ?" I chose npm. After process is finished, you actually have an web app that is ready. 
+### CLI will ask you "which package manager do you want to use ?" I chose npm. After process is finished, you actually have an web app that is ready. You can run it with;
+
+```
+npm run start
+```
+
+### If you want to change port number you need to modify it in src/main.ts
+Otherwise, The App will run on [localhost:3000](localhost:3000)
+
+## To Create Users Module, Controller and Service
+```
+nest g module users
+```
+```
+nest g controller users
+```
+```
+nest g service users
+```
+
+### These commands will create files listed below
+    1. src/users/users.module.ts
+    2. src/users/users.controller.ts
+    3. src/users/users.service.ts
+
+### Files are not just created they are wired up with app.module.ts file with line;
+>imports: [UsersModule]
+
+### I will not explain what those lines are doing detailly. You should search Dependency Injection design pattern.
+
+### Also you will heavily see;
+    1. @Module
+    2. @Controller
+    3. @Injectable
+
+### For these you need to also read about Typescript Decorators.
