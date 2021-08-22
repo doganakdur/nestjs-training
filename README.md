@@ -1,1 +1,42 @@
 # nestjs-training
+
+**!!! READ THIS FIRST !!!**
+
+Nestjs is a awesome tool that you can use to develop, maintain and deploy web app easy and fast. I can explain how it is make you life easier, but I will do that in code.
+
+If you are a beginner on web app development, if you didn't develop any API from scratch, using languages libraries only;
+
+**PLEASE DO NOT USE NESTJS**.
+
+If you don't know;
+
+    1. Typescript
+    2. How HTTP works
+    3. What the RESTful API means
+    4. How the Dependency Injection handles all things behind the scenes
+    5. How Decorators works in Typescript
+
+**PLEASE DO NOT USE NESTJS**
+
+Nestjs is not suitable for beginners. It hides so many features from developers. It heavily uses Dependency Injection design pattern and Decorators. You need to know them, at least read some articles or watch some videos about them. [You can read Nestjs Documentation by clicking here.](https://docs.nestjs.com)
+
+On the other hand, if you have some experience, and if you are Nodejs/Typescript developer, you should try Nestjs to develop, maintain well-structured web apps, APIs or microservices.
+
+**Let's code.**
+
+## Before Starting
+This repo is created after watching [Stephen Grider's Udemy Course](https://www.udemy.com/course/nestjs-the-complete-developers-guide/) to learn more about Nestjs by myself. He is stunning teacher, you should check his courses.
+
+### Nest CLI
+We will use nest cli(command line interface) tool to create project and some of the files. To install nest cli;
+
+```
+npm install -g @nestjs/cli
+```
+
+Then to create an project;
+```
+nest new your_project_name
+```
+
+CLI will ask you "which package manager do you want to use ?" I chose npm. After process is finished, you actually have an web app that is ready. 
