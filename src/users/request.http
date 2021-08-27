@@ -1,11 +1,8 @@
 ### Create user
-POST http://localhost:3000/users
+POST http://localhost:3000/auth/signup
 content-type: application/json
 
 {
-    "username": "test",
-    "password": 1234
+    "email": "a@bc.com",
+    "password": "1234"
 }
-
-### Get user with id
-GET http://localhost:3000/users/1
