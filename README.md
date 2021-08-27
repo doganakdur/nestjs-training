@@ -86,4 +86,17 @@ nest g service users
 npm i @nestjs/typeorm typeorm sqlite3
 ```
 
-## Configured the sqlite db with db.sqlite name. When you run the code, you will see db.sqlite file in the root directory. After that, created the User entity and connect it to the app module. I leave comments on some lines to explain the hidden processes. 
+### Configured the sqlite db with db.sqlite name. When you run the code, you will see db.sqlite file in the root directory. After that, created the User entity and connect it to the app module. I leave comments on some lines to explain the hidden processes.
+
+## User signup routes and validations
+```
+npm i class-validator class-transformer
+```
+
+### class-validator will used to check and validate DTO(Data Transfer Object) fields are valid.
+
+## At this point if you use user-routes branch code, after you run the app, send request using request.http file. After that check the console, if email and password fields are valid you can see them on vs-code terminal.
+
+### Also to check whitelist: true option in main.ts file, you can send another field in body. You will not see it in terminal.
+
+### To learn more about Data Transfer Object please check out [Nestjs Official Docs here](https://docs.nestjs.com/controllers#request-payloads)
