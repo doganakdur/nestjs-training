@@ -100,3 +100,15 @@ npm i class-validator class-transformer
 ### Also to check whitelist: true option in main.ts file, you can send another field in body. You will not see it in terminal.
 
 ### To learn more about Data Transfer Object please check out [Nestjs Official Docs here](https://docs.nestjs.com/controllers#request-payloads)
+
+## To See Database Contents
+### The next section, user creation process will be implemented with service and repository. To check database to see user information, you need to install SQLite (Explore and query SQLite databases) extension.
+
+## After installing that open Command Pallette throught the View section on VS-Code, type sqlite, choose the Open Database option. Then VS-Code will list you sqlite file, please select it. Now you can see SQLITE EXPLORER option in EXPLORER menu on the left in VS-CODE. Expand it till you can see user. CLick play button at the right side.
+
+## QUICK NOTE ABOUT Create vs Save
+
+**There are hooks functions in typeorm module, they are executed if you use**
+**create first, then save method.**
+
+**If you directyly use this.userRepo.save({email, password}), hooks are not executed. If you want to learn more in depth please see the [typeorm official docs here.](https://typeorm.io/#/)**
