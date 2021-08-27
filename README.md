@@ -80,3 +80,10 @@ nest g service users
 ## Rest Client Extension for VSCode Users
 
 ### There is an extension called "REST Client" for VSCode. If you install it, run the code, then you can send requests through the src/users/request.http file. You just need to click "Send Request" buttons for each individual request section.
+
+### We will use sqlite to store data. To install it;
+```
+npm i @nestjs/typeorm typeorm sqlite3
+```
+
+## Configured the sqlite db with db.sqlite name. When you run the code, you will see db.sqlite file in the root directory. After that, created the User entity and connect it to the app module. I leave comments on some lines to explain the hidden processes. 
