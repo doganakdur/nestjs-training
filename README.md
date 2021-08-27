@@ -98,3 +98,5 @@ npm i class-validator class-transformer
 ## At this point if you use user-routes branch code, after you run the app, send request using request.http file. After that check the console, if email and password fields are valid you can see them on vs-code terminal.
 
 ### Also to check whitelist: true option in main.ts file, you can send another field in body. You will not see it in terminal.
+
+### To learn more about Data Transfer Object please check out [Nestjs Official Docs here](https://docs.nestjs.com/controllers#request-payloads)
