@@ -123,3 +123,5 @@ npm i class-validator class-transformer
 **If you directyly use this.userRepo.save({email, password}), hooks are not executed. If you want to learn more in depth please see the [typeorm official docs here.](https://typeorm.io/#/)**
 
 ## NOTE: Email can be duplicated in db.sqlite file at this point.
+
+### Route handlers and services are ready for user. As you can notice if you fetch a user with id, password is returning in response object. We map some fields that we do not want to return as response in next commits.
