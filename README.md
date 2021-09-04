@@ -22,7 +22,16 @@ Nestjs is not suitable for beginners. It hides so many features from developers.
 
 On the other hand, if you have some experience, and if you are Nodejs/Typescript developer, you should try Nestjs to develop, maintain well-structured web apps, APIs or microservices.
 
-**Let's code.**
+# To Run this repo
+**Prerequisites: You should install node on your machine.**
+```
+npm install
+```
+```
+npm run start
+```
+
+**If you want to do steps from beginning, let's code.**
 
 # Before Starting
 This repo is created after watching [Stephen Grider's Udemy Course](https://www.udemy.com/course/nestjs-the-complete-developers-guide/) to learn more about Nestjs by myself. He is stunning teacher, you should check his courses.
@@ -112,3 +121,5 @@ npm i class-validator class-transformer
 **create first, then save method.**
 
 **If you directyly use this.userRepo.save({email, password}), hooks are not executed. If you want to learn more in depth please see the [typeorm official docs here.](https://typeorm.io/#/)**
+
+## NOTE: Email can be duplicated in db.sqlite file at this point.
